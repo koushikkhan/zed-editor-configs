@@ -1,0 +1,20 @@
+[
+  {
+    "label": "LaTeX: Forward Search (SumatraPDF)",
+    "command": "cmd.exe",
+    "args": [
+      "/c",
+      "start",
+      "\"\"",
+      "C:\\Users\\koushik.khan\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe",
+      "-reuse-instance",
+      "${ZED_WORKTREE_ROOT}\\build\\default\\default.pdf",
+      "-forward-search",
+      "${ZED_FILE}",
+      "${ZED_ROW}",
+    ],
+    "reveal": "never",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+  },
+]

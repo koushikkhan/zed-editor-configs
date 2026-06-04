@@ -1,0 +1,27 @@
+{
+  "languages": {
+    "LaTeX": {
+      "language_servers": ["texlab"],
+      "formatter": "prettier",
+      "soft_wrap": "editor_width",
+    },
+  },
+  "lsp": {
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "build": {
+            "executable": "tectonic",
+            "args": ["-X", "build", "--keep-logs", "--keep-intermediates"],
+            "onSave": true,
+            // "forwardSearchAfter": true,
+          },
+          // "forwardSearch": {
+          //   "executable": "C:\\Users\\koushik.khan\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe",
+          //   "args": ["-reuse-instance", "%p", "-forward-search", "%f", "%l"],
+          // },
+        },
+      },
+    },
+  },
+}
