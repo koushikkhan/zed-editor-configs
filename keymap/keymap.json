@@ -1,0 +1,12 @@
+# Note: Zed doesn't dupport keeping local keymap file, copy the keymap config(s) to the global keymap file instead
+[
+    {
+        "context": "Editor",
+        "bindings": {
+        "ctrl-alt-j": [
+            "task::Spawn",
+                { "task_name": "LaTeX: Forward Search (SumatraPDF)" },
+            ],
+        },
+    },
+]
