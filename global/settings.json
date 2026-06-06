@@ -65,6 +65,13 @@
     "LaTeX": {
       "language_servers": ["texlab"],
       "soft_wrap": "editor_width",
+      "formatter": {
+        "external": {
+          "command": "latexindent",
+          "arguments": ["--modifylinebreaks"],
+        },
+      },
+      "format_on_save": "on",
     },
   },
   "lsp": {
