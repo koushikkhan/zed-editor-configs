@@ -1,0 +1,84 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "autosave": "on_focus_change",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "minimap": {
+    "show": "always",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "ui_font_family": "Monaco",
+  "ui_font_size": 16,
+  "buffer_font_family": "Monaco",
+  "buffer_font_size": 15,
+  "auto_install_extensions": {
+    "dart": true,
+    "git-firefly": true,
+    "ruff": true,
+    "xcode-themes": true,
+    "toml": true,
+    "high-contrast-themes": true,
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light Soft",
+    "dark": "High Contrast Dracula",
+  },
+  "terminal": {
+    "font_size": 13.0,
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default",
+      },
+    },
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "languages": {
+    "LaTeX": {
+      "language_servers": ["texlab"],
+      "soft_wrap": "editor_width",
+    },
+  },
+  "lsp": {
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "build": {
+            "executable": "tectonic",
+            "args": ["-X", "build", "--keep-logs", "--keep-intermediates"],
+            "onSave": true,
+            "forwardSearchAfter": true,
+          },
+        },
+      },
+    },
+  },
+}
