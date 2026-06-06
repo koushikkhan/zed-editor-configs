@@ -1,0 +1,27 @@
+[
+  {
+    "label": "LaTeX: Forward Search (Skim)",
+    "command": "/Applications/Skim.app/Contents/SharedSupport/displayline -r -z -b $ZED_ROW $ZED_WORKTREE_ROOT/build/bayesian-intro-1/bayesian-intro-1.pdf $ZED_FILE",
+    "allow_concurrent_runs": false,
+    "reveal": "never",
+    "hide": "always",
+  },
+  {
+    "label": "LaTeX: Forward Search (SumatraPDF)",
+    "command": "cmd.exe",
+    "args": [
+      "/c",
+      "start",
+      "\"\"",
+      "C:\\Users\\koushik.khan\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe",
+      "-reuse-instance",
+      "${ZED_WORKTREE_ROOT}\\build\\default\\default.pdf",
+      "-forward-search",
+      "${ZED_FILE}",
+      "${ZED_ROW}",
+    ],
+    "reveal": "never",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+  },
+]
